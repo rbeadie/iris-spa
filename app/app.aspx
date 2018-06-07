@@ -27,8 +27,15 @@
         <SharePoint:ProjectProperty Property="Description" runat="server" />
     </asp:Content>
     <asp:Content ContentPlaceHolderId="PlaceHolderMain" runat="server">
+        @@include('app.html')
+          
         <script type="text/javascript">
-        // <!-- inject:app.js -->
-        // <!-- endinject -->
+            // @@include('vendor-min.js')
         </script>
+        <script type="text/javascript">
+            // @@include('app-min.js')
+        </script>
+        <style>
+            @@include('app.css')
+        </style> 
     </asp:Content>

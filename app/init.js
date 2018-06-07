@@ -9,6 +9,9 @@
     var uid = "app_" + (Math.random() * 1e9 >>> 0);
     document.write('<div id="' + uid + '"></div>'); 
 
+    // @@include('scripts/version.js')
+    // @@include('scripts/app.js')
+
     var
     isInitDone = false,
 
@@ -38,3 +41,4 @@
     }
 
 }(window, document));
+
