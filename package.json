@@ -1,0 +1,27 @@
+{
+  "name": "octo",
+  "version": "0.1.0",
+  "author": {
+    "name": "Rachel Wright"
+  },
+  "license": "",
+  "scripts": {
+    "postinstall": "bower install --config.interactive=false",
+    "prod": "gulp -p",
+    "gulp": "gulp",
+    "watch": "gulp watch",
+    "prestart": "gulp",
+    "start": "http-server -a localhost -p 8000 -c-1 ./dist"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-filter": "^5.1.0",
+    "gulp-if": "^2.0.2",
+    "gulp-inject": "^4.3.2",
+    "gulp-minify": "^2.1.0",
+    "main-bower-files": "^2.13.1"
+  }
+}
